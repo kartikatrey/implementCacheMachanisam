@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <clipPath id="clip-icon-commands">
+      <rect width="68" height="68"/>
+    </clipPath>
+  </defs>
+  <g id="icon-commands" clip-path="url(#clip-icon-commands)">
+    <rect width="68" height="68" fill="#f4f5f9"/>
+    <g id="Group_314" data-name="Group 314">
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="68" height="68" rx="34" fill="#00a7e0" opacity="0.11"/>
+      <path id="ic_supervisor_account_24px" d="M25.994,16.583a4.137,4.137,0,1,0-4.137-4.137A4.124,4.124,0,0,0,25.994,16.583ZM13.583,14.928A4.964,4.964,0,1,0,8.619,9.964,4.943,4.943,0,0,0,13.583,14.928Zm12.411,4.964c-3.028,0-9.1,1.522-9.1,4.551v3.723h18.2V24.443C35.095,21.415,29.022,19.893,25.994,19.893ZM13.583,18.238C9.728,18.238,2,20.174,2,24.029v4.137H13.583V24.443c0-1.407.546-3.872,3.922-5.742A20.325,20.325,0,0,0,13.583,18.238Z" transform="translate(16.83 14.179)" fill="#00a7e0"/>
+    </g>
+  </g>
+</svg>

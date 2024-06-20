@@ -1,0 +1,125 @@
+$mainColor: var(--main-color);
+$subColor1: var(--sub-color1);
+$subColor2: var(--sub-color2);
+:root {
+
+    --font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    /* fonts size */
+    --font-xxs: 0.643rem;    /* 9px */
+    --font-xs: 0.714rem;    /* 10px */
+    --font-xs-5: 0.786rem;    /* 11px */
+    --font-sm: 0.857rem;    /* 12px */
+    --font-sm-5: 0.929rem;    /* 13px */
+    --font-base: 1rem;      /* 14px */
+    --font-base-1: 1.1rem;      /* 14px */
+    --font-md: 1.142rem;     /* 16px */
+    --font-md-5: 1.214rem;     /* 17px */ 
+    --font-lg: 1.286rem;    /* 18px */
+    --font-pagetile: 1.428rem;  /* 20px */
+    --font-lg-max: 1.375rem;    /* 22px */
+    --font-xl: 1.714rem;    /* 24px */
+    --font-xl-5: 1.857rem;    /* 26px */
+    --font-xxl: 2.143rem;  /* 30px */
+    --font-xxl-5: 2.429rem;  /* 34px */
+    --font-xxxl: 2.571rem;  /* 36px */
+
+    /* Spacing */
+    --space-xxxs: 0.071rem; /*1px */
+    --space-xxs: 0.125rem; /*2px */
+    --space-xxs-5: 0.214rem; /*3px */
+    --space-xs: 0.25rem; /*4px */
+    --space-xs-5: 0.357rem; /*5px */
+    --space-md: 0.37rem; /*6px */
+    --space-md-5: 0.500rem; /*7px */
+    --space-sm: 0.571rem; /*8px */
+    --space-sm-5: 0.857rem; /*12px */
+    --space-base: 1rem; /*16px */
+    --space-lg: 1.5rem; /*24px */
+    --space-xl: 2rem; /*32px */
+    --space-xxl: 3rem; /*48px */
+    --space-xxxl: 4rem; /*64px */
+
+    /* radius */
+    --radius-sm: 0.125rem; /*2px */
+    --radius-base: 0.25rem; /*4px */
+    --radius-lg: 0.5rem; /*8px */
+    --radius-xl: 1rem; /*16px */
+    --radius-round: 6.25rem; /*100px */
+
+    /* border */
+    --border-base: 0.0625rem; /*1px */
+    --border-lg: 0.125rem; /*2px */
+    --border-xl: 0.214rem; /*3px */
+    --border-xxl: 0.286rem; /*4px */
+
+
+    /* Colors */
+    --main-bg-color: #edf2f7;
+    --black: rgba(0, 0, 0);
+    --white: rgba(255, 255, 255);
+
+    --brand-01: rgba(60, 54, 107);
+    --brand-02: rgba(67, 65, 144);
+    --brand-03: rgba(76, 81, 191);
+    --brand-04: rgba(90, 103, 216);
+    --brand-05: rgba(102, 126, 234);
+    --brand-06: rgba(127, 156, 245);
+    --brand-07: rgba(163, 191, 250);
+    --brand-08: rgba(195, 218, 254);
+    --brand-08-5: rgba(210, 227, 254);
+    --brand-08-7: rgba(240, 247, 255);
+    --brand-09: rgba(235, 244, 255);
+    --brand-09-5: rgba(244, 249, 255);
+    --brand-09-7: rgba(247, 250, 255);
+    --brand-10: rgba(249, 251, 255);
+
+    --dark-01: rgba(26, 32, 44);
+    --dark-02: rgba(45, 55, 72);
+    --dark-03: rgba(74, 84, 104);
+    --dark-03-5: rgba(96, 105, 122);
+    --dark-04: rgba(113, 128, 150);
+    --dark-04-5: rgba(141, 153, 171);
+    --dark-05: rgba(160, 174, 192);
+    --dark-05-5: rgba(184, 194, 208);
+    --dark-06: rgba(203, 213, 224);
+    --dark-06-5: rgba(217, 224, 232);
+    --dark-07: #{$mainColor};
+    --dark-07-5: rgba(233, 238, 244);
+    --dark-07-1:rgba(226, 232, 240);
+    --dark-08: #{$subColor1};
+    --dark-08-5: rgba(241, 245, 249);
+    --dark-09:#{$subColor2};
+    --dark-09-5: rgba(249, 251, 253);
+    --dark-10: rgb(226, 232, 240);
+    --dark-10-5: rgba(233, 238, 244);
+
+    --green-01: rgba(34, 84, 61);
+    --green-02: rgba(39, 103, 73);
+    --green-03: rgba(47, 133, 90);
+    --green-04: rgba(56, 161, 105);
+    --green-05: rgba(72, 187, 120);
+    --green-06: rgba(104, 211, 145);
+    --green-07: rgba(154, 230, 180);
+    --green-08: rgba(198, 246, 213);
+    --green-09: rgba(240, 255, 244);
+
+    --yellow-01: rgba(116, 66, 16);
+    --yellow-02: rgba(151, 90, 22);
+    --yellow-03: rgba(183, 121, 31);
+    --yellow-04: rgba(214, 158, 46);
+    --yellow-05: rgba(236, 201, 75);
+    --yellow-06: rgba(246, 224, 94);
+    --yellow-07: rgba(250, 240, 137);
+    --yellow-08: rgba(254, 252, 191);
+    --yellow-09: rgba(255, 255, 240);
+
+    --red-01: rgba(116, 42, 42);
+    --red-02: rgba(155, 44, 44);
+    --red-03: rgba(197, 48, 48);
+    --red-04: rgba(229, 62, 62);
+    --red-05: rgba(245, 101, 101);
+    --red-06: rgba(252, 129, 129);
+    --red-07: rgba(254, 178, 178);
+    --red-08: rgba(254, 215, 215);
+    --red-09: rgba(255, 245, 245);  
+}

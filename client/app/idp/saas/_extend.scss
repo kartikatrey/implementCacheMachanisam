@@ -1,0 +1,69 @@
+@import "../_idpVariables";
+@import 'node_modules/@braid/vue-formulate/themes/snow/snow.scss';
+
+// buttons style
+%btn-primary {
+  background: var(--brand-04) !important;
+  color: var(--white) !important;
+}
+%btn-border {
+  // border:var(--border-lg) solid var(--brand-04);
+  color: var(--brand-03);
+  border-radius: var(--radius-base);
+  background: transparent;
+  font-weight: 400;
+}
+.el-button--primary {
+  @extend %btn-primary; // Primary blue button
+}
+.el-button {
+  @extend %btn-border; // Blue border button
+}
+.el-button--danger {
+  @extend %tag-danger;
+}
+// | buttons style 
+
+
+
+
+// Tag STyle
+%tag-success {
+  border: var(--border-base) solid var(--green-02);
+  color: var(--green-02);
+  background: var(--green-08);
+}
+%tag-info {
+  border: var(--border-base) solid var(--dark-03);
+  color: var(--dark-03);
+  background: transparent;
+}
+%tag-danger {
+  border: var(--border-base) solid var(--red-02);
+  color: var(--red-02);
+  background: var(--red-08);
+}
+%tag-warning {
+  border: var(--border-base) solid var(--yellow-02);
+  color: var(--yellow-02);
+  background: var(--yellow-08);
+}
+.el-tag {
+  // padding: 0 var(--space-sm);
+  // height: auto;
+  // line-height: unset;
+  font-size: var(--font-sm);
+  font-weight: 400;
+}
+.el-tag--info {
+  @extend %tag-info; 
+}
+.el-tag--success {
+  @extend %tag-success; 
+}
+.el-tag--danger{
+  @extend %tag-danger; 
+}
+.el-tag--warning {
+  @extend %tag-warning; 
+}

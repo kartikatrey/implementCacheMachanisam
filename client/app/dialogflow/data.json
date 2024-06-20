@@ -1,0 +1,13 @@
+{
+	"name":"",
+	"domain": "",
+	"system": "",
+	"object": "",
+	"action": "",
+	"entities":[],
+	"error_message":"",
+	"workflow_data": {
+		"id": "kanverse@0.1.0",
+		"nodes": {}
+	}
+}

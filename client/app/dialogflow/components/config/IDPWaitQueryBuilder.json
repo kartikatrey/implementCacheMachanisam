@@ -1,0 +1,108 @@
+[
+    {
+        "type":"select",
+        "id":"has_errors",
+        "operators":[
+          "Are not"
+        ],
+        "label":"Errors",
+        "choices":[
+           {
+              "label":"Resolved",
+              "value":"Resolved"
+          }
+        ]
+    },
+    {
+        "type":"select",
+        "id":"stage",
+        "label":"Stage",
+        "operators":[
+          "changed to"
+        ],
+        "choices":[
+          {
+              "label":"Uploaded",
+              "value":"Uploaded"
+          },
+          {
+            "label":"Extracted",
+            "value":"Extracted"
+          },
+          {
+              "label":"Confirmed",
+              "value":"Confirmed"
+          },
+          {
+              "label":"Published",
+              "value":"Published"
+          },
+          {
+              "label":"Duplicate",
+              "value":"Duplicate"
+          },
+          {
+              "label":"Draft",
+              "value":"Draft"
+          },
+          {
+              "label":"Approved",
+              "value":"Approved"
+          },
+          {
+              "label":"Rejected",
+              "value":"Rejected"
+          },
+          {
+              "label":"Deleted",
+              "value":"Deleted"
+          },
+          {
+              "label":"Approval rejected",
+              "value":"Approval rejected"
+          },
+          {
+              "label":"Waiting for approval",
+              "value":"Waiting for approval"
+          }
+        ]
+    },
+    {
+        "type":"select",
+        "id":"state",
+        "label":"State",
+        "operators":[
+          "changed to"
+        ],
+        "choices":[
+          {
+              "label":"Requested",
+              "value":"Requested"
+          },
+          {
+              "label":"Pending",
+              "value":"Pending"
+          },
+          {
+              "label":"Queued",
+              "value":"Queued"
+          },
+          {
+              "label":"In progress",
+              "value":"In progress"
+          },
+          {
+              "label":"Success",
+              "value":"Success"
+          },
+          {
+              "label":"Extracted",
+              "value":"Extracted"
+          },
+          {
+              "label":"Failed",
+              "value":"Failed"
+          }
+        ]
+    }
+  ]

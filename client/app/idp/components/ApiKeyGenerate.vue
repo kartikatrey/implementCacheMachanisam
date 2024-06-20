@@ -1,0 +1,90 @@
+<template>
+  <div class="api_wrapper">
+    <el-input
+      class="form-control"
+      id="apikey"
+      type="text"
+      :value="api_key"
+      :clearable="false"
+      placeholder="Click on the button to generate a new API key ..."
+    /><el-button class="form-control" id="keygen" @click="generateApiKey()">
+      Generate API key
+    </el-button>
+  </div>
+</template>
+
+<script>
+const crypto = require("crypto");
+
+export default {
+  name: "ApiKeyGenerate",
+  components: {},
+  props: ['api_key'],
+  data() {
+    return {
+      value: null,
+      loading: false,
+      api_key: null,
+    };
+  },
+  watch: {},
+  methods: {
+    generateApiKey() {
+      const rand = crypto.randomBytes(16);
+      this.api_key = rand.toString("hex");
+      this.$emit("sendApiKey", this.api_key);
+    },
+  },
+
+  beforeMount() {},
+  mounted() {},
+};
+</script>
+<style lang="scss">
+@import "../_idpVariables";
+@import "../_idpGlobal";
+.api_wrapper {
+  display: flex;    
+      button.form-control {
+        background: #f7f7f7 none repeat scroll 0 0;
+        border-color: #ccc;
+        box-shadow: 0 1px 0 #ccc;
+        color: #555;
+        vertical-align: top;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        height: 28px;
+        line-height: 26px;
+        margin: 0;
+        padding: 0 10px 1px;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      input.form-control {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset;
+        color: #32373c;
+        outline: 0 none;
+        transition: border-color 50ms ease-in-out 0s;
+        margin: 1px;
+        padding: 3px 5px;
+        border-radius: 0;
+        font-size: 14px;
+        font-family: inherit;
+        font-weight: inherit;
+        box-sizing: border-box;
+        color: #444;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.4em;
+        width: 200px;
+      }
+}
+</style>
+

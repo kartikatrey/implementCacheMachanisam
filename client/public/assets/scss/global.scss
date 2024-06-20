@@ -1,0 +1,276 @@
+@import '_variables';
+@import '_mixins';
+@import 'element-variables';
+@import 'card-shadow';
+@import 'helpers';
+@import 'typography';
+@import 'color-schemes';
+@import 'float-label';
+@import 'vuebar';
+//@import 'perfect-scrollbar';
+@import 'tables';
+@import 'vue-good-table';
+//@import '../fonts/Nunito-Sans.css';
+
+html, body {
+	font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.4;
+
+	height: 100%;
+	//height: 100vh;
+	width: 100%;
+	//width: 100vw;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: fixed;
+
+	background: $background-color;
+	color: $text-color;
+}
+
+[v-cloak] {
+    display: none !important;
+}
+
+::selection {
+	background-color: $text-color-accent;
+	color: #fff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: transparentize($text-color, .5);
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: transparentize($text-color, .5);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: transparentize($text-color, .5);
+}
+
+.page-header {
+	margin-bottom: 45px;
+
+	h1 {
+		margin: 0;
+		@include text-bordered-shadow();
+	}
+
+	h4 {
+		margin: 0;
+		margin-top: 10px;
+		opacity: .5;
+	}
+
+	.el-breadcrumb {
+		margin-top: 10px;
+		line-height: 1.3;
+
+		.el-breadcrumb__inner, .el-breadcrumb__inner a {
+			color: $text-color;
+		}
+		.el-breadcrumb__separator {
+			color: transparentize($text-color, 0.7);
+		}
+		.el-breadcrumb__item:last-child .el-breadcrumb__inner,
+		.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover,
+		.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+		.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover {
+			color: transparentize($text-color, 0.4);
+		}
+	}
+
+	&.card-base {
+		padding: 24px;
+	}
+	&.header-accent {
+		background: $text-color-accent !important;
+	}
+	&.header-primary {
+		background: $text-color !important;
+	}
+	&.header-accent, &.header-primary {
+		h1, h4 {
+			color: white;
+			text-shadow: none;
+		}
+
+		.el-breadcrumb {
+			.el-breadcrumb__inner, .el-breadcrumb__inner a {
+				color: white;
+			}
+			.el-breadcrumb__separator {
+				color: transparentize(white, 0.7);
+			}
+			.el-breadcrumb__item:last-child .el-breadcrumb__inner,
+			.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover,
+			.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+			.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover {
+				color: transparentize(white, 0.4);
+			}
+		}
+	}
+}
+
+
+ // end form login all
+
+ .login-page {
+
+	//  background: $white;
+
+	 .signup-img {
+    // width: 100%;
+    height: 100%;
+    background-image: url("../images/kanverse_landing.png");
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+	.login-header {
+    float: right;
+    margin-top: 0;
+    margin-right: 32px;
+    display: block;
+    p {
+      display: inline-block;
+      font-size: $font-size-default !important;
+	  color: #A5B4C3;
+	  margin-top: 5px;
+    }
+    a {
+      margin-left: 8px;
+      font-size: $font-size-14;
+      font-weight: 700;
+      text-decoration: none;
+      color: #657483;
+    }
+  }
+
+.btn-dark {
+	background-color: #14A8DF !important;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+	transition: all ease-in-out .4s;
+	border: 0;
+	&:hover {
+		box-shadow: 0 0px 6px rgba(0,0,0,0.3);
+		background-color: #079DD5;
+	}
+}
+.el-aside {
+	width: 450px !important;
+}
+@media (min-width:1400px) {
+	.el-aside {
+		width: 550px !important;
+	}
+}
+
+// @media screen and (min-width: 1400px) {
+// 	.container {
+// 	  width: 1370px;
+// 	}
+// }
+
+.el-main {
+    padding-top: 0;
+  }
+
+		.form-area {
+			// margin-top: 102px;
+			span {
+				display: inline-block;
+			}
+
+			.form-heading {
+				font-size: $font-size-28;
+				font-weight: 400;
+				margin-bottom: 8px;
+				margin-top: 8px;
+			}
+
+			.form-subtitle {
+				font-size: $font-size-default;
+				margin-bottom: 48px;
+				color: $text-color-light;
+			}
+
+			.form-validation {
+				margin-bottom: 16px;
+				font-weight: 700;
+				color: $text-color-danger;
+			}
+
+			.form-input-section {
+
+				margin-bottom: 32px;
+							.input-label {
+								font-size: $font-size-12;
+								font-weight: 700;
+								margin-bottom: 8px;
+
+									.el-form-item__label {
+										font-size: $font-size-14;
+										text-transform: uppercase;
+									}
+							}
+
+							.form-input-actions {
+								font-size: $font-size-14;
+								text-decoration: none;
+								float: right;
+								color: $text-color-light;
+							}
+
+							.input-area {
+								input {
+								height: 50px;
+								}
+							}
+
+							.validation-border {
+								border: 1px solid $text-color-danger;
+								border-radius: 5px;
+							}
+
+							.input-validation {
+								font-size: $font-size-14;
+								color: $text-color-danger;
+								margin-top: 6px;
+							}
+
+							.form-button-long {
+								width: 100%;
+								font-weight: 700;
+								height: 50px;
+								background: $text-color-info;
+								color: $white;
+							}
+
+							.forgot-password-link {
+								float: right;
+								text-decoration: none;
+								color:  #879CAF;
+								padding-top: 4px;
+									&:hover {
+										text-decoration: underline;
+									}
+							}
+
+				} // end form login all
+
+
+		}
+
+	}
+
+/*@media (max-width: 768px) {
+	.page-header:not(.card-base) {
+		padding: 0 10px;
+	}
+}*/
